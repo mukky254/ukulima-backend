@@ -8,9 +8,9 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 10000
       - key: MONGO_URI
-        fromDatabase:
-          name: ukulima-db
-          property: connectionString
+        value: mongodb+srv://mukky254:muhidinaliko2006@cluster0.bneqb6q.mongodb.net/ukulima?retryWrites=true&w=majority&appName=Cluster0
       - key: JWT_SECRET
         generateValue: true
